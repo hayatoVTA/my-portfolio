@@ -13,7 +13,7 @@ const Header = () => {
                 <Nav className="mr-auto">
                 </Nav>
                 <Nav className="all__category">
-                    <p className="category"><a href="/">Home</a></p>
+                    <p className="category"><a href="/my-portfolio">Home</a></p>
                     <p className="category"><a href="/skill">Skill</a></p>
                     <p className="category"><a href="/career">Career</a></p>
                     {/* <p className="category"><a href="/blog">Blog</a></p> */}
