@@ -12,6 +12,11 @@ import CssIcon from './images/css_logo.png'
 import BootstrapIcon from './images/bootstrap.png'
 import PenIcon from './images/pen_logo.png'
 import FirebaseIcon from './images/firebase_logo.png'
+import GithubIcon from './images/github_logo.png'
+import VscodeIcon from './images/vscode_logo.png'
+import AwsIcon from './images/aws_logo.png'
+import DockerIcon from './images/docker_logo.png'
+import TwitterIcon from './images/twitter_logo.png'
 
 import './Skill.css';
 
@@ -24,13 +29,13 @@ const Skill = () => {
                     <div className="skill__title">
                         <div className="s_title">Skill</div>
                         <div className="s_subtitle">今まで触ってきた言語や技術、仕事で身についたスキルをまとめています</div>
-                        <p>Iconはまだテスト</p>
+                        <p>言語は広く浅くやりすぎていて一つの言語に特化していないので教えていただけるとありがたいです。</p>
                     </div>
                 </div>
                 <div className="skills container">
                     <div className="skill__card">
                         <Card className="card" style={{ width: '10rem' }}>
-                            <Card.Img className="logo" variant="top" src="https://d32fap9p1scgyy.cloudfront.net/images/topics/twitter.png" />
+                            <Card.Img className="logo" variant="top" src={TwitterIcon} />
                             <Card.Body>
                                 <Card.Title>Twitter</Card.Title>
                                     <Card.Text className="card__bio">
@@ -89,7 +94,7 @@ const Skill = () => {
                             <Card.Body>
                                 <Card.Title>React</Card.Title>
                                     <Card.Text className="card__bio">
-                                    ちょっと触れる・ポートフォリオ
+                                    全然触れん・ポートフォリオ
                                     </Card.Text>
                             </Card.Body>
                         </Card>
@@ -151,18 +156,18 @@ const Skill = () => {
                     </div>
                     <div className="skill__card">
                         <Card style={{ width: '10rem' }}>
-                            <Card.Img className="logo" variant="top" src="https://d32fap9p1scgyy.cloudfront.net/images/topics/github.png" />
+                            <Card.Img className="logo" variant="top" src={GithubIcon} />
                             <Card.Body>
                                 <Card.Title>Github</Card.Title>
                                     <Card.Text className="card__bio">
-                                    ある程度できる
+                                    ある程度
                                     </Card.Text>
                             </Card.Body>
                         </Card>
                     </div>
                     <div className="skill__card">
                         <Card style={{ width: '10rem' }}>
-                            <Card.Img className="logo" variant="top" src="https://d32fap9p1scgyy.cloudfront.net/images/topics/docker.png" />
+                            <Card.Img className="logo" variant="top" src={DockerIcon} />
                             <Card.Body>
                                 <Card.Title>Docker</Card.Title>
                                     <Card.Text className="card__bio">
@@ -173,7 +178,7 @@ const Skill = () => {
                     </div>
                     <div className="skill__card">
                         <Card style={{ width: '10rem' }}>
-                            <Card.Img className="logo" variant="top" src="https://d32fap9p1scgyy.cloudfront.net/images/topics/vscode.png" />
+                            <Card.Img className="logo" variant="top" src={VscodeIcon} />
                             <Card.Body>
                                 <Card.Title>VSCode</Card.Title>
                                     <Card.Text className="card__bio">
@@ -184,7 +189,7 @@ const Skill = () => {
                     </div>
                     <div className="skill__card">
                         <Card style={{ width: '10rem' }}>
-                            <Card.Img className="logo" variant="top" src="https://d32fap9p1scgyy.cloudfront.net/images/topics/aws.png" />
+                            <Card.Img className="logo" variant="top" src={AwsIcon} />
                             <Card.Body>
                                 <Card.Title>AWS</Card.Title>
                                     <Card.Text className="card__bio">
