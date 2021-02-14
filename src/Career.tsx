@@ -18,6 +18,21 @@ const Career = () => {
                 </div>
                 <div className="careers">
                     <div className="career__card">
+                        <Card.Header>2020年4月〜</Card.Header>
+                        <Card.Body>
+                            <blockquote className="blockquote mb-0">
+                                <p>
+                                    {' '}
+                                    不動産系企業のWebライター{' '}
+                                </p>
+                                <footer className="blockquote-footer">
+                                    Webライティング
+                                </footer>
+                            </blockquote>
+                        </Card.Body>
+                    </div>
+                    <div className="line_fix"></div>
+                    <div className="career__card">
                         <Card.Header>2020年4月</Card.Header>
                         <Card.Body>
                             <blockquote className="blockquote mb-0">
@@ -26,11 +41,12 @@ const Career = () => {
                                     日本テレビ「スッキリ」『稼ぐ中高生』特集{' '}
                                 </p>
                                 <footer className="blockquote-footer">
-                                    ブロガー・コピーライター
+                                    ブログSEO・コピーライティング
                                 </footer>
                             </blockquote>
                         </Card.Body>
                     </div>
+                    <div className="line_fix"></div>
                     <div className="career__card">
                         <Card.Header>2020年4月〜</Card.Header>
                         <Card.Body>
@@ -39,12 +55,13 @@ const Career = () => {
                                     {' '}
                                     N高等学校入学{' '}
                                 </p>
-                                {/* <footer className="blockquote-footer">
-                                    
-                                </footer> */}
+                                <footer className="blockquote-footer">
+                                    5期生 ネットコース (N高生の友達が全然いないので仲良くしてください)
+                                </footer>
                             </blockquote>
                         </Card.Body>
                     </div>
+                    <div className="line_fix"></div>
                     <div className="career__card">
                         <Card.Header>2020年4月〜</Card.Header>
                         <Card.Body>
@@ -59,6 +76,7 @@ const Career = () => {
                             </blockquote>
                         </Card.Body>
                     </div>
+                    <div className="line_fix"></div>
                     <div className="career__card">
                         <Card.Header>2020年11月〜</Card.Header>
                         <Card.Body>
@@ -73,6 +91,7 @@ const Career = () => {
                             </blockquote>
                         </Card.Body>
                     </div>
+                    <div className="line_fix"></div>
                     <div className="career__card">
                         <Card.Header>2020年2月〜</Card.Header>
                         <Card.Body>
@@ -87,16 +106,17 @@ const Career = () => {
                             </blockquote>
                         </Card.Body>
                     </div>
+                    <div className="line_fix"></div>
                     <div className="career__card">
-                        <Card.Header>2020年11月〜</Card.Header>
+                        <Card.Header>2020年2月〜</Card.Header>
                         <Card.Body>
                             <blockquote className="blockquote mb-0">
                                 <p>
                                     {' '}
-                                    株式会社CARCHにてFlutterでのアプリ開発{' '}
+                                    株式会社立ち上げに関して{' '}
                                 </p>
                                 <footer className="blockquote-footer">
-                                    モバイルアプリエンジニア (Flutter・Firebase・Github)
+                                    代表取締役社長
                                 </footer>
                             </blockquote>
                         </Card.Body>

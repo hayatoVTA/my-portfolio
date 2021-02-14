@@ -1,11 +1,8 @@
-.career__card {
-  margin-top: 30px;
-}
-
 .careers {
   position: absolute;
   left: 10%;
   right: 10%;
+  padding-bottom: 40px;
 }
 
 .card-body {
@@ -26,4 +23,11 @@
 
 .c_subtitle {
   font-size: 20px;
+}
+
+.line_fix {
+  margin-left: 50%;
+  width: 5px;
+  height: 50px;
+  background-color: rgba(148, 225, 250, 0.536);
 }
