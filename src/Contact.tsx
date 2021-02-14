@@ -4,7 +4,7 @@ import { useForm, Controller } from "react-hook-form";
 import { ContactGoogleForm } from './ContactGoogleForm'
 import axios from 'axios';
 
-const options: string[] = ['オプション1', 'オプション2']
+const options: string[] = ['案件に関して', 'TV又はYouTube等の出演に関して', 'その他']
 
 const Contact: React.FC<any> = () => {
     const { register, handleSubmit } = useForm({
@@ -30,7 +30,15 @@ const Contact: React.FC<any> = () => {
                     </tr>
                     <tr>
                         <th>
-                            <p>テスト</p>
+                            <p>返信可能メールアドレス</p>
+                        </th>
+                        <td>
+                            <input type={'text'} name={'mail'} ref={register({ required: true })} />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>お問い合わせについて</p>
                         </th>
                         <td>
                             {options.map((option) => (
@@ -38,7 +46,7 @@ const Contact: React.FC<any> = () => {
                                 <label>
                                 <input
                                     type={'radio'}
-                                    name={'test'}
+                                    name={'category'}
                                     value={option}
                                     ref={register()}
                                 />
@@ -64,7 +72,10 @@ const submit = (values: any) => {
   
     // PostのParm生成
     const submitParams = new FormData()
-    submitParams.append(ContactGoogleForm.test, values.test)
+    submitParams.append(ContactGoogleForm.name, values.name)
+    submitParams.append(ContactGoogleForm.mail, values.mail)
+    submitParams.append(ContactGoogleForm.category, values.category)
+    submitParams.append(ContactGoogleForm.inquiry, values.inquiry)
   
     // 実行
     axios
