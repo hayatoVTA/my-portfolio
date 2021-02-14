@@ -33,8 +33,6 @@
 
 .follow__button {
   position: absolute;
-  margin-top: 20px;
-  top: 40%;
   right: 5%;
   border-radius: 50px;
 }

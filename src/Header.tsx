@@ -2,6 +2,11 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import './Header.css';
+import HomeIcon from '@material-ui/icons/Home';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
+import WorkIcon from '@material-ui/icons/Work';
+import CreateIcon from '@material-ui/icons/Create';
+import MailIcon from '@material-ui/icons/Mail';
 
 const Header = () => {
     return (
@@ -13,11 +18,11 @@ const Header = () => {
                 <Nav className="mr-auto">
                 </Nav>
                 <Nav className="all__category">
-                    <p className="category"><a href="/">Home</a></p>
-                    <p className="category"><a href="/skill">Skill</a></p>
-                    <p className="category"><a href="/career">Career</a></p>
-                    <p className="category"><a href="/blog">Blog</a></p>
-                    <p className="category"><a href="/contact">Contact</a></p>
+                    <p className="category"><a href="/"><HomeIcon /> Home</a></p>
+                    <p className="category"><a href="/skill"><WhatshotIcon /> Skill</a></p>
+                    <p className="category"><a href="/career"><WorkIcon /> Career</a></p>
+                    {/* <p className="category"><a href="/blog"><CreateIcon /> Blog</a></p> */}
+                    <p className="category"><a href="/contact"><MailIcon /> Contact</a></p>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
