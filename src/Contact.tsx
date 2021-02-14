@@ -1,91 +1,30 @@
 import React from 'react'
 import Header from './Header'
-import { useForm, Controller } from "react-hook-form";
-import { ContactGoogleForm } from './ContactGoogleForm'
-import axios from 'axios';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
-const options: string[] = ['案件に関して', 'TV又はYouTube等の出演に関して', 'その他']
+import './Contact.css'
+import { blue, orange } from '@material-ui/core/colors';
 
-const Contact: React.FC<any> = () => {
-    const { register, handleSubmit } = useForm({
-        mode: 'onChange',
-      })
-    
-      const TestPrint =  () => {
-          console.log(FormData)
-      }
+const Contact = () => {
       
     return (
         <>
             <Header />
-            <form noValidate onSubmit={handleSubmit(submit)}>
-                <tbody>
-                    <tr>
-                        <th>
-                            <p>お名前又は法人名</p>
-                        </th>
-                        <td>
-                            <input type={'text'} name={'name'} ref={register({ required: true })} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <p>返信可能メールアドレス</p>
-                        </th>
-                        <td>
-                            <input type={'text'} name={'mail'} ref={register({ required: true })} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <p>お問い合わせについて</p>
-                        </th>
-                        <td>
-                            {options.map((option) => (
-                            <div key={option}>
-                                <label>
-                                <input
-                                    type={'radio'}
-                                    name={'category'}
-                                    value={option}
-                                    ref={register()}
-                                />
-                                {option}
-                                </label>
-                            </div>
-                            ))}
-                        </td>
-                    </tr>
-                </tbody>
-                <p>お問い合わせ内容</p>
-                <textarea name={'inquiry'} />
-                <button type={'submit'}>送信する</button>
-            </form>
+            <div className="contact-content">
+                <div className="sns__contact">
+                    <div className="sns__contactTitle"><p>SNSのDMでもお問い合わせを受け付けております。正直こちらの方が楽なのと返信が早いのでオススメです。</p></div>
+                    <div className="sns__icon">
+                        <div className="twitter__contact"><a href="https://twitter.com/messages/compose?recipient_id=1029347975544242177"><TwitterIcon style={{ fontSize: 40, color: blue[500] }} /></a></div>
+                        <div className="instagram__contact"><a href="https://www.instagram.com/hayato.o_0423/"><InstagramIcon style={{ fontSize: 40, color: orange[800] }} /></a></div>
+                    </div>
+                </div>
+                <div className="contact__googleForm container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7NnpDYImaoxKYrYVEKQWhMMpHQYmuZ6OIT1tiyyjqGEiWnA/viewform?embedded=true" width={640} height={1000} frameBorder={0} marginHeight={0} marginWidth={0}>読み込んでいます…</iframe>
+                </div>
+            </div>
         </>
     )
 }
-
-const submit = (values: any) => {
-    const GOOGLE_FORM_ACTION = ContactGoogleForm.action
-    // CORS
-    const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
-  
-    // PostのParm生成
-    const submitParams = new FormData()
-    submitParams.append(ContactGoogleForm.name, values.name)
-    submitParams.append(ContactGoogleForm.mail, values.mail)
-    submitParams.append(ContactGoogleForm.category, values.category)
-    submitParams.append(ContactGoogleForm.inquiry, values.inquiry)
-  
-    // 実行
-    axios
-      .post(GOOGLE_FORM_ACTION, submitParams)
-      .then(() => {
-        window.location.href = '/thanks' // 成功時
-      })
-      .catch((error) => {
-        console.log(error) // 失敗時
-      })
-  }
 
 export default Contact

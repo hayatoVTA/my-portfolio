@@ -27,7 +27,7 @@
 
 .line_fix {
   margin-left: 50%;
-  width: 5px;
+  width: 8px;
   height: 50px;
-  background-color: rgba(148, 225, 250, 0.536);
+  background-color: rgba(63, 63, 63, 0.18);
 }
