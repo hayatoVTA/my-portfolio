@@ -1,0 +1,33 @@
+.careers {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  padding-bottom: 40px;
+}
+
+.card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.career__title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.c_title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.c_subtitle {
+  font-size: 20px;
+}
+
+.line_fix {
+  margin-left: 50%;
+  width: 8px;
+  height: 50px;
+  background-color: rgba(63, 63, 63, 0.18);
+}

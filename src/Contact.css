@@ -1,0 +1,29 @@
+.contact__googleForm {
+  text-align: center;
+}
+
+iframe[src^="https://docs.google.com/forms/d/e"]
+{
+  width: 100%;
+}
+
+.sns__contactTitle {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.sns__icon {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sns__icon > div {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}

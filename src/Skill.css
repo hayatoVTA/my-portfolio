@@ -1,0 +1,38 @@
+.skill__title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.s_title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.s_subtitle {
+  font-size: 20px;
+}
+
+.skills {
+  overflow: hidden;
+  text-align: center;
+}
+
+.skill__card {
+  float: left;
+  margin: 8px;
+}
+
+.card__bio {
+  height: 20px;
+  font-size: 14px;
+}
+
+.logo {
+  object-fit: cover;
+  height: 10rem;
+  border-radius: 5rem;
+}
+
+.card {
+  margin: 0 auto;
+}
