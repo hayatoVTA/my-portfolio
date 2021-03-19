@@ -23,9 +23,11 @@ const home = () => {
                         <figure className="profile__icon">
                             <img src={Icon} alt=""/>
                         </figure>
-                        <div className="profile__name">Hayato Omori (大森駿斗)</div>
-                        <div className="profile__id">@I wanna be a Serverside Engineer</div>
-                        <Button className="follow__button" variant="outline-primary"><a href="https://twitter.com/intent/follow?screen_name=hayato_VTA">Twitterをフォロー</a></Button>
+                        <div className="profile__flex">
+                            <div className="profile__name">Hayato Omori</div>
+                            <Button className="follow__button" variant="outline-primary"><a href="https://twitter.com/intent/follow?screen_name=hayato_VTA">Twitterをフォロー</a></Button>
+                        </div>
+                        <div className="profile__id">@I wanna be a Full Stack Developer</div>
                     </div>
                     <div className="profile__bio">
                         <p>16 years old. I'm a high school student.<br/>I'm a beginner engineer in Japan. And I'm in the blockchain industry right now. Learning Flutter,Python,Firebase and AWS. Please teach me all about it!</p>

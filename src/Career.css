@@ -1,8 +1,5 @@
 .careers {
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  padding-bottom: 40px;
+  margin: 20px;
 }
 
 .card-body {
@@ -13,6 +10,7 @@
 
 .career__title {
   margin-top: 20px;
+  margin-left: 20px;
   margin-bottom: 40px;
 }
 

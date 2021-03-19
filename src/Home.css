@@ -9,34 +9,33 @@
   height: 180px;
   object-fit: cover;
   border-radius: 200px;
-  position: absolute;
-  top: 26%;
-  left: 5%;
+  margin-top: -100px;
 }
 
 .profile__name {
-  position: absolute;
-  top: 50%;
-  left: 6%;
+  /* top: 50%; */
   font-size: 25px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.profile__flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .profile__id {
-  position: absolute;
-  top: 55%;
+  /* top: 55%; */
   left: 6%;
   font-size: 18px;
   font-weight: bold;
   color: #8899a6;
-  margin-top: 30px;
 }
 
 .follow__button {
-  position: absolute;
-  right: 5%;
-  border-radius: 50px;
+  border-radius: 500px;
+  height: 40px;
+  margin-top: -20px;
 }
 
 .follow__button a {
@@ -48,29 +47,25 @@
 }
 
 .profile__bio {
-  position: absolute;
-  top: 63%;
   left: 10%;
   right: 10%;
   margin-top: 30px;
 }
 
 .profile__location {
-  position: absolute;
-  top: 95%;
   color: #8899a6;
 }
 
 .profile__date {
-  position: absolute;
-  top: 110%;
   color: #8899a6;
   padding-top: 2px;
 }
 
 .profile__link {
-  position: absolute;
-  top: 130%;
   padding-bottom: 50px;
   color: #8899a6;
+}
+
+.profile {
+  margin: 20px;
 }

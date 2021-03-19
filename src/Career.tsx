@@ -78,7 +78,7 @@ const career = () => {
                     </div>
                     <div className="line_fix"></div>
                     <div className="career__card">
-                        <Card.Header>2020年11月〜</Card.Header>
+                        <Card.Header>2020年11月〜2021年2月</Card.Header>
                         <Card.Body>
                             <blockquote className="blockquote mb-0">
                                 <p>
@@ -98,7 +98,7 @@ const career = () => {
                             <blockquote className="blockquote mb-0">
                                 <p>
                                     {' '}
-                                    日本暗号資産市場株式会社にてオペレーション業務{' '}
+                                    日本暗号資産市場株式会社にて一部エンジニア・オペレーション業務{' '}
                                 </p>
                                 <footer className="blockquote-footer">
                                     現場オペレーション・ブロックチェーン・カスタマーサポート
